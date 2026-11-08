@@ -1,0 +1,7 @@
+{
+  "name": "My Server",
+  "address": "play.myserver.net",
+  "description": "Survival, Skyblock and more",
+  "languages": ["en"],
+  "featured": false
+}

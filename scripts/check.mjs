@@ -4,6 +4,7 @@ import { join } from "node:path";
 
 const SIZES = ["480x232", "960x464"];
 const MAX_BANNER = 300 * 1024;
+const MAX_GIF = 3 * 1024 * 1024;
 const FIELDS = ["name", "address", "description", "languages", "featured"];
 
 let errors = 0;
@@ -13,6 +14,9 @@ const fail = (id, msg) => {
 };
 
 function imageSize(b) {
+  if (b.length >= 10 && (b.toString("ascii", 0, 6) === "GIF87a" || b.toString("ascii", 0, 6) === "GIF89a")) {
+    return `${b.readUInt16LE(6)}x${b.readUInt16LE(8)}`;
+  }
   if (b.length >= 24 && b.readUInt32BE(0) === 0x89504e47 && b.toString("ascii", 12, 16) === "IHDR") {
     return `${b.readUInt32BE(16)}x${b.readUInt32BE(20)}`;
   }
@@ -54,9 +58,9 @@ for (const id of readdirSync("servers").sort()) {
 
   const files = readdirSync(dir);
   for (const f of files) {
-    if (!["server.json", "banner.jpg", "banner.png"].includes(f)) fail(id, `${f} doesn't belong here`);
+    if (!["server.json", "banner.jpg", "banner.png", "banner.gif"].includes(f)) fail(id, `${f} doesn't belong here`);
   }
-  if (files.includes("banner.jpg") && files.includes("banner.png")) fail(id, "only one banner please");
+  if (files.filter(f => f.startsWith("banner.")).length > 1) fail(id, "only one banner please");
 
   let s;
   try {
@@ -93,9 +97,11 @@ for (const id of readdirSync("servers").sort()) {
     continue;
   }
   const b = readFileSync(join(dir, banner));
-  if (b.length > MAX_BANNER) fail(id, `banner is ${Math.round(b.length / 1024)} KB, max is 300`);
+  const gif = banner.endsWith(".gif");
+  const max = gif ? MAX_GIF : MAX_BANNER;
+  if (b.length > max) fail(id, `banner is ${Math.round(b.length / 1024)} KB, max is ${max / 1024}`);
   const size = imageSize(b);
-  if (!size) fail(id, `${banner} isn't a real ${banner.endsWith("png") ? "PNG" : "JPG"}`);
+  if (!size) fail(id, `${banner} isn't a real ${banner.split(".")[1].toUpperCase()}`);
   else if (!SIZES.includes(size)) fail(id, `banner is ${size}, has to be 480x232 or 960x464`);
 }
 

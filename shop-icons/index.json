@@ -1,0 +1,214 @@
+{
+  "size": 512,
+  "base": "https://raw.githubusercontent.com/SallyLabs/SallyClient-Extras/main/shop-icons/",
+  "items": [
+    {
+      "id": 25,
+      "key": "royal_cape",
+      "name": "Royal Cape",
+      "collection": "royal",
+      "slot": "cape",
+      "file": "royal_cape.png"
+    },
+    {
+      "id": 46,
+      "key": "royal_crown",
+      "name": "Royal Crown",
+      "collection": "royal",
+      "slot": "hat",
+      "file": "royal_crown.png"
+    },
+    {
+      "id": 47,
+      "key": "royal_mantle",
+      "name": "Ermine Mantle",
+      "collection": "royal",
+      "slot": "neck",
+      "file": "royal_mantle.png"
+    },
+    {
+      "id": 48,
+      "key": "kingsblade",
+      "name": "Kingsblade",
+      "collection": "royal",
+      "slot": "back",
+      "file": "kingsblade.png"
+    },
+    {
+      "id": 49,
+      "key": "royal_horse",
+      "name": "Royal Steed",
+      "collection": "royal",
+      "slot": "horse",
+      "file": "royal_horse.png"
+    },
+    {
+      "id": 50,
+      "key": "royal_boat",
+      "name": "Royal Barge",
+      "collection": "royal",
+      "slot": "boat",
+      "file": "royal_boat.png"
+    },
+    {
+      "id": 26,
+      "key": "witch_hat",
+      "name": "Witch Hat",
+      "collection": "halloween",
+      "slot": "hat",
+      "file": "witch_hat.png"
+    },
+    {
+      "id": 27,
+      "key": "pumpkin_head",
+      "name": "Jack-o'-Lantern",
+      "collection": "halloween",
+      "slot": "hat",
+      "file": "pumpkin_head.png"
+    },
+    {
+      "id": 28,
+      "key": "bat_wings",
+      "name": "Bat Wings",
+      "collection": "halloween",
+      "slot": "back",
+      "file": "bat_wings.png"
+    },
+    {
+      "id": 29,
+      "key": "ghosts",
+      "name": "Little Ghosts",
+      "collection": "halloween",
+      "slot": "aura",
+      "file": "ghosts.png"
+    },
+    {
+      "id": 30,
+      "key": "haunted_cape",
+      "name": "Haunted Cape",
+      "collection": "halloween",
+      "slot": "cape",
+      "file": "haunted_cape.png"
+    },
+    {
+      "id": 17,
+      "key": "bat_cape",
+      "name": "Bat Cape",
+      "collection": "halloween",
+      "slot": "cape",
+      "file": "bat_cape.png"
+    },
+    {
+      "id": 31,
+      "key": "santa_hat",
+      "name": "Santa Hat",
+      "collection": "christmas",
+      "slot": "hat",
+      "file": "santa_hat.png"
+    },
+    {
+      "id": 32,
+      "key": "antlers",
+      "name": "Reindeer Antlers",
+      "collection": "christmas",
+      "slot": "hat",
+      "file": "antlers.png"
+    },
+    {
+      "id": 34,
+      "key": "xmas_scarf",
+      "name": "Candy Scarf",
+      "collection": "christmas",
+      "slot": "neck",
+      "file": "xmas_scarf.png"
+    },
+    {
+      "id": 35,
+      "key": "gift_pack",
+      "name": "Gift Backpack",
+      "collection": "christmas",
+      "slot": "back",
+      "file": "gift_pack.png"
+    },
+    {
+      "id": 36,
+      "key": "snowflakes",
+      "name": "Snowfall",
+      "collection": "christmas",
+      "slot": "aura",
+      "file": "snowflakes.png"
+    },
+    {
+      "id": 37,
+      "key": "yule_cape",
+      "name": "Yule Cape",
+      "collection": "christmas",
+      "slot": "cape",
+      "file": "yule_cape.png"
+    },
+    {
+      "id": 38,
+      "key": "flower_crown",
+      "name": "Flower Crown",
+      "collection": "sunflower",
+      "slot": "hat",
+      "file": "flower_crown.png"
+    },
+    {
+      "id": 39,
+      "key": "sunflower_pin",
+      "name": "Sunflower",
+      "collection": "sunflower",
+      "slot": "hair",
+      "file": "sunflower_pin.png"
+    },
+    {
+      "id": 40,
+      "key": "flower_basket",
+      "name": "Flower Basket",
+      "collection": "sunflower",
+      "slot": "back",
+      "file": "flower_basket.png"
+    },
+    {
+      "id": 41,
+      "key": "bees",
+      "name": "Bee Buddies",
+      "collection": "sunflower",
+      "slot": "aura",
+      "file": "bees.png"
+    },
+    {
+      "id": 42,
+      "key": "sunflower_cape",
+      "name": "Sunflower Cape",
+      "collection": "sunflower",
+      "slot": "cape",
+      "file": "sunflower_cape.png"
+    },
+    {
+      "id": 43,
+      "key": "vip_aura",
+      "name": "VIP Aura",
+      "collection": "ranks",
+      "slot": "aura",
+      "file": "vip_aura.png"
+    },
+    {
+      "id": 44,
+      "key": "admin_wings",
+      "name": "Warden Wings",
+      "collection": "ranks",
+      "slot": "back",
+      "file": "admin_wings.png"
+    },
+    {
+      "id": 45,
+      "key": "owner_aura",
+      "name": "Sovereign Aura",
+      "collection": "ranks",
+      "slot": "aura",
+      "file": "owner_aura.png"
+    }
+  ]
+}

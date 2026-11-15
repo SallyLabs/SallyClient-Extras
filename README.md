@@ -1,6 +1,11 @@
 # SallyClient-Extras
 Partner Icons and some other stuff for SallyClient
 
+## Shop icons
+
+Every cosmetic as a 512x512 PNG in [`shop-icons/`](shop-icons), with `index.json` listing them.
+For launchers and anything else that wants to show them.
+
 ## Servers
 
 Servers in here show up in SallyClient with their own banner. Featured ones also get added
